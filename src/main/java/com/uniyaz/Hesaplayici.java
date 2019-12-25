@@ -6,7 +6,7 @@ package com.uniyaz;
 * */
 public class Hesaplayici {
 
-    int sonButonDegeri = 0;
+    int sonButonDegeri;
 
     int artiToplamSutun;
     int artiToplamSatir;
@@ -33,7 +33,6 @@ public class Hesaplayici {
                 eksiToplamSatir = (int) cellButtons[i][j].getData() - eksiToplamSatir;
             }
         }
-        System.out.printf("eksi toplam satir : %d  eksi toplam sutun : %d",eksiToplamSatir,eksiToplamSutun);
     }
 
     public void artiSatirVeSutunuHesapla(MyButton[][] cellButtons){
@@ -47,7 +46,6 @@ public class Hesaplayici {
                 artiToplamSatir = (int)cellButtons[i][j].getData() + artiToplamSatir;
             }
         }
-        System.out.printf("arti toplam satir : %d  arti toplam sutun : %d",artiToplamSutun,artiToplamSatir);
     }
 
     public void carpimSatirVeSutunuHesapla(MyButton[][] cellButtons){
@@ -61,7 +59,6 @@ public class Hesaplayici {
                 carpimToplamSatir = (int)cellButtons[i][j].getData() * carpimToplamSatir;
             }
         }
-        System.out.printf("carpi toplam satir : %d  carp toplam sutun : %d",carpimToplamSutun,carpimToplamSatir);
     }
 
     public void bolumSatirVeSutunuHesapla(MyButton[][] cellButtons){
@@ -81,6 +78,5 @@ public class Hesaplayici {
         }
 
         bolumSutunSonuc = bolumToplamSatir / sonButonDegeri;
-        System.out.printf("bolum toplam satir : %f  bolum toplam sutun : %f", bolumSatirSonuc, bolumSutunSonuc);
     }
 }

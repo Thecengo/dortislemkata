@@ -23,8 +23,10 @@ public class MyUI extends UI {
 
     @Override
     protected void init(VaadinRequest vaadinRequest) {
+
         GridLayoutContainer gridLayoutContainer = new GridLayoutContainer();
         setContent(gridLayoutContainer);
+
     }
 
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
